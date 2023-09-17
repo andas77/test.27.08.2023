@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <img src="./image/logo.png" alt="" />
+      <ul>
+        <li>
+          <img src="./image/logo_1.svg" alt="" />
+          <p class="btn_category">Сэты</p>
+        </li>
+        <li>
+          <img src="./image/logo_2.svg" alt="" />
+          <p class="btn_category">Классические роллы</p>
+        </li>
+        <li>
+          <img src="./image/logo_3.svg" alt="" />
+          <p class="btn_category">Фирменные роллы</p>
+        </li>
+        <li>
+          <img src="./image/logo_4.svg" alt="" />
+          <p class="btn_category">Филадельфия</p>
+        </li>
+        <li>
+          <img src="./image/flame.svg" class="flame_nav" alt="" />
+          <p class="btn_category">Горячие предложения</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="icon">
+        <h2 class="hello_user"></h2>
+        <button class="btn_signin">Вход</button>
+        <div class="cart_wrapper">
+          <img src="./image/cart_icon.svg" alt="" class="cart_icon" />
+          <div class="badge">
+            <p class="badge_count">0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slider_wrapper">
+          <img src="./image/slider/slide1.jpg" alt="" class="slide" />
+          <img src="./image/slider/slide2.jpg" alt="" class="slide none" />
+          <img src="./image/slider/slide3.jpg" alt="" class="slide none" />
+        </div>
+        <div class="slider_btns"></div>
+      </div>
+
+      <div class="elements">
+        <h1 class="items_title">Горячие предложения</h1>
+
+        <div class="items"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h1 class="card_title">Корзина</h1>
+      <div class="card_items"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal_window none_modal">
+      <div class="modal_wrapper">
+        <p>Modal</p>
+        <input
+          type="text"
+          class="input_login"
+          placeholder="Login"
+          name="login"
+        />
+        <input type="password" class="input_pass" placeholder="Password" />
+        <p class="error"></p>
+        <div class="btn_modal">
+          <button class="btn_closeModal">Вход</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+    <script src="./slider.js"></script>
+  </body>
+</html>

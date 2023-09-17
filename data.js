@@ -1,0 +1,38 @@
+const sushi = [
+  {
+    id: "01",
+    title: "Красный дракон",
+    weight: 300,
+    price: 270,
+    type: "Фирменные роллы",
+    hot: true,
+    count: 1,
+  },
+  {
+    id: "02",
+    title: "Осака",
+    weight: 250,
+    price: 130,
+    type: "Классические роллы",
+    hot: true,
+    count: 1,
+  },
+  {
+    id: "03",
+    title: "Филадельфия",
+    weight: 290,
+    price: 320,
+    type: "Филадельфия",
+    hot: true,
+    count: 1,
+  },
+  {
+    id: "04",
+    title: "Сакура",
+    weight: 265,
+    price: 190,
+    type: "Сэты",
+    hot: false,
+    count: 1,
+  },
+];

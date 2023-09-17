@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav {
+  padding: 0 35px;
+  width: 20%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+li > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #444748;
+  margin-left: 10px;
+}
+
+.flame_nav {
+  width: 30px;
+}
+
+.active_category {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content {
+  background-color: #f1f1f1;
+  width: 60%;
+  padding: 30px 30px 80px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.cart_wrapper {
+  margin-bottom: 20px;
+  position: relative;
+  right: 20px;
+}
+
+.btn_signin {
+  margin-right: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e05236;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.cart_icon {
+  position: absolute;
+}
+
+.badge {
+  width: 25px;
+  height: 25px;
+  background-color: #e05236;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+
+  position: relative;
+  bottom: 2px;
+  left: 30px;
+}
+
+/*! Slider */
+
+.slide {
+  border-radius: 25px;
+  width: 810px;
+  height: 405px;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+.slider_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.none {
+  display: none;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+.active {
+  background-color: #ff8d40 !important;
+}
+
+.slider_btn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.elements {
+  margin-top: 20px;
+}
+
+.items_title {
+  margin-bottom: 30px;
+}
+
+.items {
+  width: 78%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* ? Card */
+.item {
+  width: 250px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.item_image {
+  border-radius: 25px 25px 0 0;
+}
+
+.flame {
+  width: 30px;
+  position: absolute;
+  right: 5px;
+  top: 155px;
+}
+
+.item_content {
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 0 0 25px 25px;
+}
+
+.item_title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #191c1d;
+}
+
+.item_weight {
+  font-size: 13px;
+  font-weight: 300;
+  color: #5c5f60;
+  margin: 20px 0;
+}
+
+.price_buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item_price {
+  font-size: 25px;
+  font-weight: 700;
+  color: #191c1d;
+}
+
+.item_buy {
+  background-color: #ff8d40;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition-property: background-color transform;
+  transition-duration: 0.5s;
+}
+
+.item_buy:hover {
+  background-color: #e05236;
+  transform: scale(1.1);
+}
+
+/*? Card Item */
+.card {
+  width: 20%;
+}
+
+.card_title {
+  margin: 18px 0;
+  text-align: center;
+}
+
+.card_info {
+  display: flex;
+}
+
+.card_items {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.card_item {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(187, 187, 187);
+  box-shadow: 2px 2px 3px rgb(203, 203, 203);
+  border-radius: 12px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.card_image {
+  width: 60px;
+  border-radius: 10px;
+}
+
+.card_name,
+.card_weigth {
+  font-size: 12px;
+  color: gray;
+  margin: 5px;
+}
+
+.count_price {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.card_x {
+  font-size: 10px;
+  margin: 0 10px;
+  color: rgb(167, 167, 167);
+}
+
+.remove_btn {
+  margin-left: 10px;
+  background-color: #e05236;
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ! Modal */
+.modal_window {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(127, 127, 127, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_wrapper {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.none_modal {
+  display: none;
+}
+
+.error {
+  font-size: 12px;
+  color: #e05236;
+}
